@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-img{
+    position: fixed;
+    z-index: -1
+}
+
+#dsktp-right.bg-img{
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 20%;
+}
+
+#dsktp-bottom.bg-img{
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+}
+
+.container{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 80vw;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    /* Ensure content stays on top of background */
+    position: relative; 
+    /* this should keep it above background */
+    z-index: 1; 
+}
+
+.intro{
+    width: 25%;
+}
+
+.intro-ratings{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+h1{
+    margin-bottom: 15px;
+    color:hsl(300, 43%, 22%);
+}
+
+h2{
+    font-size: small;
+}
+
+.texts{
+    margin-left: 20px;
+}
+
+.grid-it{
+    display: grid;
+    gap: 15px;
+}
+
+.reviews{
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.name-rvw{
+    border: 1px solid hsl(300, 43%, 22%);
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 30px; /* Add padding to create space inside the border */
+    text-align: center; /* Center-align the content */
+    margin-bottom: 20px; /* Add some space between items */
+}
+
+/* adding margin top forces it down a bit */
+/* adding margin bottom drew it out a bit */
+.one{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.two{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.prsn{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 5px;
+}
+
+.buya{
+    color: hsl(333, 80%, 67%);
+}
+
+p{
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+.star-button{
+    width: 300px;
+    padding: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 5px;
+    border: 0;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.int-note{
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+img{
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.img-txt{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fas{
+    color: orange;
+    margin: 2px;
+}
+
+.shft-c{
+    margin-left: 70px;
+}
+
+.shft-b{
+    margin-left: 35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 90vw;
+    }
+    
+    .intro {
+        width: 100%;
+    }
+
+    .intro-ratings {
+        flex-direction: column;
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-rvw {
+        width: 80%;
+    }
+
+    .texts {
+        margin-left: 0;
+    }
+
+    .grid-it {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shft-c,
+    .shft-b {
+        margin-left: 0;
+    }
+
+}
